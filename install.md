@@ -162,7 +162,33 @@ karaf@root()>
    cd D:\java-develop\project
    build.bat
 ```
+### 检查是否有安装错误
+```bash
+    bundle:diag
+    # 应该什么都不显示
+```
+### 检查数据源是否安装成功
+```bash
+    ls DataSource
+    
+    [javax.sql.DataSource]
+    ----------------------
+     databaseName = kalix
+     dataSourceName = jdbc/ds
+     felix.fileinstall.filename = file:/D:/java-develop/tools/apache-karaf-4.1.2/etc/org.ops4j.datasource-kalix.cfg
+     osgi.jdbc.driver.name = PostgreSQL JDBC Driver
+     osgi.jndi.service.name = jdbc/ds
+     password = 1234
+     portNumber = 5432
+     serverName = localhost
+     service.bundleid = 56
+     service.factoryPid = org.ops4j.datasource
+     service.id = 287
+     service.pid = org.ops4j.datasource.730adc19-2b46-4fc6-950e-ace377d5adf8
+     service.scope = singleton
+     user = postgres
 
+```
 ### 初始化数据
 
 > 初始化数据库的用户，权限以及组织机构
