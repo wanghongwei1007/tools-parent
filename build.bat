@@ -17,9 +17,9 @@ cd ..
 IF %hasErrors%==0  cd middleware-parent & git pull origin master & call mvn  -DskipTests=true clean install || set hasErrors=1
 IF %hasErrors%==1 echo 'An error occurred of middleware-parent' & pause & goto :EOF
 
-cd ..
-IF %hasErrors%==0  cd oa-parent & git pull origin master & call mvn clean install || set hasErrors=1
-IF %hasErrors%==1 echo 'An error occurred of oa-parent' & pause & goto :EOF
+:: cd ..
+:: IF %hasErrors%==0  cd oa-parent & git pull origin master & call mvn clean install || set hasErrors=1
+:: IF %hasErrors%==1 echo 'An error occurred of oa-parent' & pause & goto :EOF
 
 cd ..
 IF %hasErrors%==0  cd common-parent & git pull origin master & call mvn clean install || set hasErrors=1
@@ -28,10 +28,6 @@ IF %hasErrors%==1 echo 'An error occurred of common-parent' & pause & goto :EOF
 cd ..
 IF %hasErrors%==0  cd tools-parent & git pull origin master & call mvn clean install || set hasErrors=1
 IF %hasErrors%==1 echo 'An error occurred of tools-parent' & pause & goto :EOF
-
-cd ..
-IF %hasErrors%==0  cd research-parent & git pull origin master & call mvn clean install || set hasErrors=1
-IF %hasErrors%==1 echo 'An error occurred of research-parent' & pause & goto :EOF
 
 cd ..
 
