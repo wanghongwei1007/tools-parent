@@ -88,6 +88,11 @@
 
 ## 安装过程
 
+### 安装openjpa jar
+
+复制openjpa-2.4.0.Release.jar 和 openjpa-2.4.0.Release.pom 到
+C:\Users\Administrator\.m2\repository\org\apache\openjpa\openjpa\2.4.0.Release
+
 ### 下载工程文件
 
 ```bash

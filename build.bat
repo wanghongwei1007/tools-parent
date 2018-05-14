@@ -25,11 +25,6 @@ cd ..
 IF %hasErrors%==0  cd common-parent & git pull origin master & call mvn clean install || set hasErrors=1
 IF %hasErrors%==1 echo 'An error occurred of common-parent' & pause & goto :EOF
 
-
-cd ..
-IF %hasErrors%==0  cd schedule-parent & git pull origin master & call mvn clean install || set hasErrors=1
-IF %hasErrors%==1 echo 'An error occurred of schedule-parent' & pause & goto :EOF
-
 cd ..
 IF %hasErrors%==0  cd tools-parent & git pull origin master & call mvn clean install || set hasErrors=1
 IF %hasErrors%==1 echo 'An error occurred of tools-parent' & pause & goto :EOF
