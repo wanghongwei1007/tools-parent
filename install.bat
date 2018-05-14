@@ -1,41 +1,41 @@
 @echo 'Start to build project'
 @echo off
-git clone https://github.com/chenyanxu/kalix-parent.git
+git clone https://github.com/xingshidongman/kalix-parent.git
 cd kalix-parent
 call mvn clean install
 cd ..
 
-git clone https://github.com/chenyanxu/framework-parent.git
+git clone https://github.com/xingshidongman/framework-parent.git
 cd framework-parent
 call mvn -DskipTests=true clean install -P openshift-develop
 cd ..
 
-git clone https://github.com/chenyanxu/admin-parent.git
+git clone https://github.com/xingshidongman/admin-parent.git
 cd admin-parent
 call mvn clean install
 cd ..
 
-git clone https://github.com/chenyanxu/middleware-parent.git
+git clone https://github.com/xingshidongman/middleware-parent.git
 cd middleware-parent
 call mvn clean install
 cd ..
 
-git clone https://github.com/chenyanxu/oa-parent.git
+git clone https://github.com/xingshidongman/oa-parent.git
 cd oa-parent
 call mvn clean install
 cd ..
 
-git clone https://github.com/chenyanxu/common-parent.git
+git clone https://github.com/xingshidongman/common-parent.git
 cd common-parent
 call mvn clean install
 cd ..
 
-git clone https://github.com/chenyanxu/schedule-parent.git
+git clone https://github.com/xingshidongman/schedule-parent.git
 cd schedule-parent
 call mvn clean install
 cd ..
 
-git clone https://github.com/chenyanxu/tools-parent.git
+git clone https://github.com/xingshidongman/tools-parent.git
 cd tools-parent
 call mvn clean install
 cd ..
