@@ -50,11 +50,11 @@
   
 ### Karaf
 
-> 版本： [apache-karaf-4.1.1](http://karaf.apache.org)
+> 版本： [apache-karaf-4.1.2](http://karaf.apache.org)
   
 > 说明：Karaf是一个基于OSGi的运行环境，Karaf提供了一个轻量级的OSGi容器，可以用于部署各种组件，应用程序。
   
-> 备注：需要解包到D:\java-develop\tools\apache-karaf-4.1.1。
+> 备注：需要解包到D:\java-develop\tools\apache-karaf-4.1.2。
   
 ### PostgreSQL
 
@@ -91,7 +91,7 @@
 ### 下载工程文件
 
 ```bash
-   git clone https://github.com/chenyanxu/tools-parent.git
+   git clone https://github.com/xingshidongman/tools-parent.git
    cd tools-parent.git
    copy install.bat D:\java-develop\project
    copy build.bat D:\java-develop\project
@@ -103,9 +103,9 @@
 
 ### 运行karaf
 
-1. 删除D:\java-develop\tools\apache-karaf-4.0.7\data目录
-* 删除D:\java-develop\tools\apache-karaf-4.0.7\deploy下所有的文件
-* 执行D:\java-develop\tools\apache-karaf-4.0.7\bin\karaf.bat。显示如下：
+1. 删除D:\java-develop\tools\apache-karaf-4.1.2\data目录
+* 删除D:\java-develop\tools\apache-karaf-4.1.2\deploy下所有的文件
+* 执行D:\java-develop\tools\apache-karaf-4.1.2\bin\karaf.bat。显示如下：
 
 ```bash
         __ __                  ____      
@@ -114,7 +114,7 @@
      / /| |/ /_/ / /  / /_/ / __/        
     /_/ |_|\__,_/_/   \__,_/_/         
 
-  Apache Karaf (4.0.7)
+  Apache Karaf (4.1.2)
 
 Hit '<tab>' for a list of available commands
 and '[cmd] --help' for help on a specific command.
