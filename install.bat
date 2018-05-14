@@ -30,11 +30,6 @@ cd common-parent
 call mvn clean install
 cd ..
 
-git clone https://github.com/xingshidongman/schedule-parent.git
-cd schedule-parent
-call mvn clean install
-cd ..
-
 git clone https://github.com/xingshidongman/tools-parent.git
 cd tools-parent
 call mvn clean install
