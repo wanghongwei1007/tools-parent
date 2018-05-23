@@ -346,7 +346,8 @@
         <feature>jndi</feature>
         <feature>jdbc</feature>
         <feature>eventadmin</feature>
-        <feature version="2.4.1">jpa</feature>
+        <feature>jpa</feature>
+        <feature version="${openjpa.version}">openjpa</feature>
         <!--<feature dependency="true">mysql-driver</feature>-->
         <!--<feature dependency="true">derby-driver</feature>-->
         <!--<feature dependency="true">jsr303</feature>-->
@@ -363,7 +364,7 @@
         <feature>camel-dozer</feature>
         <feature>camel-swagger-java</feature>
         <feature>camel-shiro</feature>
-        <feature>camel-xmpp</feature>
+        <!--<feature>camel-xmpp</feature>-->
         <feature>shiro-core</feature>
         <!--<feature>shiro-web</feature>-->
         <feature>jedis</feature>
